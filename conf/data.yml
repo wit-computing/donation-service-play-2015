@@ -1,0 +1,50 @@
+User(homer):
+    usaCitizen: true
+    firstName: Homer
+    lastName: Simpson
+    email: homer@simpson.com
+    password: secret
+
+User(marge):
+    usaCitizen: true
+    firstName: Marge
+    lastName: Simpson
+    email: marge@simpson.com
+    password: secret
+
+User(lisa):
+    usaCitizen: true
+    firstName: Lisa
+    lastName: Simpson
+    email: lisa@simpson.com
+    password: secret
+
+User(bart):
+    usaCitizen: true
+    firstName: Bart
+    lastName: Simpson
+    email: bart@simpson.com
+    password: secret
+
+User(maggie):
+    usaCitizen: true
+    firstName: Maggie
+    lastName: Simpson
+    email: maggie@simpson.com
+    password: secret
+
+Donation(a):
+    amount : 210
+    method : paypal
+
+Donation(b):
+    amount : 20
+    method : cash
+
+Donation(c):
+    amount : 330
+    method : cash
+
+Donation(d):
+    amount : 10
+    method : paypal
