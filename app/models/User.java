@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import play.db.jpa.Model;
@@ -17,6 +18,9 @@ public class User extends Model
   public String lastName;
   public String email;
   public String password;
+  
+  @OneToMany(cascade = CascadeType.ALL)
+  public List<Donation> donations = new ArrayList<Donation>();
 
   public User(String firstName, String lastName, String email, String password)
   {
