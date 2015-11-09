@@ -2,14 +2,19 @@ package utils;
 
 import java.lang.reflect.Type;
 import java.util.List;
+
+import com.google.gson.ExclusionStrategy;
+import com.google.gson.FieldAttributes;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import models.Donation;
 import models.User;
 
 public class JsonParsers
 {
-  static Gson gson = new Gson();
+ // static Gson gson = new Gson();
+  static Gson gson = new GsonBuilder().setExclusionStrategies(new JsonFilter()).create();
 
   public static User json2User(String json)
   {
