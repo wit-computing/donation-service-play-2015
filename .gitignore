@@ -2,7 +2,7 @@
 .*
 # except for .gitignore
 !.gitignore
-
+bin
 
 
 # Ignore Play! working directory #
